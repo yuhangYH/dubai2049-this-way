@@ -12,7 +12,11 @@
 
 ---
 
-## ✅ C1 信到（已完成 task 1003919887652892672）
+## ✅ C1 信到（首帧已完成 task 1003919887652892672）
+**视频运动提示词**（8s / 1080p / Motion low）：
+```
+The envelope lies on the wooden floor; camera pushes in very slowly toward the "OASIS 2049" postmark until it almost fills the frame; dust motes drift in the soft dawn light; the Burj Khalifa silhouette glows warmer as the sun rises outside; slow cinematic push-in, single continuous shot, no cuts.
+```
 ## ✅ C2 读信（已完成 task 1003947587541159936）
 
 ---
@@ -113,8 +117,22 @@ She finishes writing, folds the letter slowly, melts the crimson wax and presses
 ---
 
 ## 视频生成设置（Image-to-Video 页面）
-- 上传对应首帧图 → 粘贴运动提示词 → 模型 viduq2-pro → 720p → 时长 8s
-- 每条生成后：截图首帧+末帧、记任务 ID 到 03_截图/任务记录.md
+- 上传对应首帧图 → 粘贴运动提示词 → **时长 8s** → **1080p** → Motion Intensity 见下表
+- 总账：10 条 × 8s = 80s 原始素材 → 剪辑后约 65–75s，落在比赛 60–90s 区间
+- 每条生成后：截图首帧+末帧、记任务 ID 到 03_截图/任务记录.md → 让我 commit 到 GitHub
+
+| 片段 | 时长 | Motion | 说明 |
+|---|---|---|---|
+| C1 信到 | 8s | low | 静场推镜，动作要小 |
+| C2 读信 | 8s | low | 表情戏，微动 |
+| C3 沙暴迷失 | 8s | high | 风暴剧烈运动 |
+| C4 第一次救援★ | 8s | high | 核心镜头，拉手+奔跑 |
+| C5 消失人海 | 5s | low | 转身+摇镜，可短 |
+| C6 寻找 | 8s（或裁切帧 4s×2） | medium | 一镜跟拍 |
+| C7 迪拜之框★ | 8s | medium | 变身效果，太快会糊 |
+| C8 洪水救援★ | 8s | high | 核心镜头，与C4镜像 |
+| C9 台阶上的信 | 8s | low | 递信+读邮戳，静场 |
+| C10 写信闭环 | 8s | low | 盖章收尾，静场 |
 
 ## 字幕（CapCut 里加，共 4 处）
 - C2: "Within 24 hours, the storm will take you."（打字机字体逐行浮现）
