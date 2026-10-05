@@ -1,0 +1,42 @@
+{
+  "budget": 5000,
+  "defaults": {
+    "model": "viduq2-turbo",
+    "resolution": "720p",
+    "seed": 2049
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "mode": "img2video",
+      "images": [
+        "keyframes/S01_balcony_letter.png"
+      ],
+      "duration": 5,
+      "movement_amplitude": "small",
+      "prompt": "Slow push-in. A sealed parchment envelope with a gold wax seal materializes from drifting golden light particles on a balcony railing at dusk; Burj Khalifa glowing in the background, warm golden-hour light, cinematic, shallow depth of field."
+    },
+    {
+      "id": "S05",
+      "mode": "reference2video",
+      "images": [
+        "refs/lin_2026.png",
+        "refs/rahim.png"
+      ],
+      "duration": 6,
+      "prompt": "Medium shot at an abra boat station on Dubai Creek at sunset. The young Chinese woman in a white shirt approaches the elderly South Asian man holding a faded orange hard hat; he looks up and smiles gently. Warm golden light, cinematic, 35mm film look.",
+      "model": "viduq2",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "id": "S11",
+      "mode": "start-end2video",
+      "images": [
+        "keyframes/S11_start_2026.png",
+        "keyframes/S11_end_2049.png"
+      ],
+      "duration": 4,
+      "prompt": "Seamless time-lapse transition: the 2026 Dubai skyline at dusk transforms into the futuristic 2049 skyline at night, a new tower rising beside Burj Khalifa, cool blue and gold tones."
+    }
+  ]
+}
